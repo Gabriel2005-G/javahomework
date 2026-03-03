@@ -62,9 +62,6 @@ class House {
     private final double livingAreaSize;
     private final String address;
 
-    /**
-     * Methodology 1: Constructor using specific parameters.
-     */
     public House(int numberOfRooms, boolean hasPorch, int numberOfBathrooms,
                  int numberOfBalconies, double livingAreaSize, String address) {
         this.numberOfRooms = numberOfRooms;
@@ -75,10 +72,7 @@ class House {
         this.address = address;
     }
 
-    /**
-     * Methodology 2: Constructor repeating parameters of another house (Copy Constructor).
-     * This creates an independent house with the same values.
-     */
+    
     public House(House otherHouse) {
         this.numberOfRooms = otherHouse.numberOfRooms;
         this.hasPorch = otherHouse.hasPorch;
