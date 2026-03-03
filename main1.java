@@ -29,7 +29,7 @@ class Car {
     private final double maxEngineOilMileage;
     private final double maxGearboxOilMileage;
 
-    // Current mileage indicators (initialized to 0, not given from outside)
+
     private double currentEngineOilMileage = 0;
     private double currentGearboxOilMileage = 0;
 
@@ -47,8 +47,7 @@ class Car {
             System.out.println("The car cannot be driven. Change oil first!");
             return;
         }
-        // Generates random mileage between 50 and 500 km
-        double tripMileage = 50 + (450 * random.nextDouble());
+               double tripMileage = 50 + (450 * random.nextDouble());
         currentEngineOilMileage += tripMileage;
         currentGearboxOilMileage += tripMileage;
         System.out.printf("Driven %.2f km. Total since last service: Eng: %.2f, Gear: %.2f%n",
@@ -77,3 +76,4 @@ class Car {
         return brand;
     }
 }
+
